@@ -15,6 +15,7 @@ Y = np.array(dfy.values)
 plt.scatter(X, Y)
 
 X_test = np.linspace(-5, 12.5,10)
+print(X_test)
 Y_test = []
 
 fit = neigh.fit(dfx, dfy)
