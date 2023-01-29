@@ -1,14 +1,16 @@
-import numpy as np 
-import matplotlib.pyplot as plt 
-import pandas as pd
+import random
 
-a = [["11", "12"]
-      ["22", "13"]
-      ["33", "14"]
-      ["44", "15"]]
+with open("weightedX.csv", 'r') as f:
+      a=f.read().split("\n")[:-1]
 
-from sklearn.feature_extraction.text import CountVectorizer 
-cv = CountVectorizer() 
-a = cv.fit_transform(a) 
+# print(a)
 
-print(a)    
+print(round(random.random()*10))
+s= ""
+
+for i in a:
+      s+= "" + str(float(i)+round(random.random()*10)) + "\n"
+
+with open("weightedY.csv", "w") as f:
+      f.write(s)
+      
