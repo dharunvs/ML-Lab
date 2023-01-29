@@ -1,5 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 df = pd.read_csv("survey-lung-cancer.csv") 
@@ -7,12 +5,10 @@ df = pd.read_csv("survey-lung-cancer.csv")
 df['LUNG_CANCER'] = df['LUNG_CANCER'].map({"YES":1, "NO":0})
 df['GENDER'] = df['GENDER'].map({'M':1,'F':0})
 
-from sklearn.model_selection import train_test_split
-
 X = df.iloc[:].values
 y = df.iloc[:, -1].values
 
-
+from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2, random_state = 0)
 
 from sklearn.preprocessing import StandardScaler
@@ -31,6 +27,5 @@ print(y_pred)
 
 
 from sklearn.metrics import confusion_matrix, accuracy_score
-cm = confusion_matrix(y_test, y_pred)
+print(confusion_matrix(y_test, y_pred))
 print(accuracy_score(y_test, y_pred))
-print(cm)

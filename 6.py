@@ -3,8 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-neigh = KNeighborsRegressor()
-
+regressor = KNeighborsRegressor()
 
 dfx = pd.read_csv('weightedX.csv')
 dfy = pd.read_csv('weightedY.csv')
@@ -15,10 +14,9 @@ Y = np.array(dfy.values)
 plt.scatter(X, Y)
 
 X_test = np.linspace(-5, 12.5,10)
-print(X_test)
 Y_test = []
 
-fit = neigh.fit(dfx, dfy)
+fit = regressor.fit(dfx, dfy)
 
 for i in X_test:
     Y_test.append(fit.predict([[i]]))

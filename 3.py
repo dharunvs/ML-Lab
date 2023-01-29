@@ -10,13 +10,8 @@ faceCascade = cv2.CascadeClassifier(cascPath)
 image = cv2.imread(imagePath)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-faces = faceCascade.detectMultiScale(
- gray,
-#  scaleFactor=1.1,
-#  minNeighbors=5,
-#  minSize=(5, 5),
-#  flags = cv2.FONT_HERSHEY_SIMPLEX
-)
+faces = faceCascade.detectMultiScale(gray)
+
 print("Found {0} faces!".format(len(faces)))
 
 for (x, y, w, h) in faces:
