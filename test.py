@@ -8,6 +8,7 @@ with open("weightedX.csv", 'r') as f:
 print(round(random.random()*10))
 s= ""
 
+
 for i in a:
       s+= "" + str(float(i)+round(random.random()*10)) + "\n"
 

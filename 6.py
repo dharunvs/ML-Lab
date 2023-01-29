@@ -10,6 +10,7 @@ dfx = pd.read_csv('weightedX.csv')
 dfy = pd.read_csv('weightedY.csv')
 
 X = np.array(dfx.values)
+
 Y = np.array(dfy.values)
 
 plt.scatter(X, Y)
