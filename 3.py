@@ -1,3 +1,6 @@
+'''Implement facial recognition application with 
+artificial neural network
+'''
 import cv2
 
 imagePath = "pic1.png"

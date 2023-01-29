@@ -1,3 +1,8 @@
+'''Implement the non-parametric Locally Weighted 
+Regression algorithm in order to fit data points. Select 
+appropriate data set for your experiment and draw 
+graphs'''
+
 from sklearn.neighbors import KNeighborsRegressor
 import pandas as pd
 import matplotlib.pyplot as plt

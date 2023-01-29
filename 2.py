@@ -1,9 +1,7 @@
-import numpy as np
+'''Detecting Spam mails using Support vector machine'''
+
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import GridSearchCV
-from sklearn import svm
 
 df = pd.read_csv("spam.csv") 
 
@@ -24,8 +22,7 @@ classifier = SVC(kernel = 'rbf', random_state = 0)
 classifier.fit(X_train, y_train)
 
 y_pred = classifier.predict(X_test) 
-
-print(classifier.score(X_test,y_test))
+print(y_pred)
 
 from sklearn.metrics import confusion_matrix, accuracy_score 
 

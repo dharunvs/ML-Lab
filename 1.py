@@ -1,3 +1,8 @@
+'''Implement the concept of decision trees with suitable 
+data set from real world problem and classify the data 
+set to produce new sample.'''
+
+
 import pandas as pd
 
 df = pd.read_csv("survey-lung-cancer.csv") 

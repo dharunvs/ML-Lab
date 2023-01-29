@@ -1,3 +1,6 @@
+'''Choose best machine learning algorithm to 
+implement online fraud detection'''
+
 import numpy as np
 import pandas as pd
 
