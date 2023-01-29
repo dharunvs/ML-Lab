@@ -1,7 +1,7 @@
 import cv2
 
-imagePath = "pic 1.png"
-imagePath = "pic 2.jpg"
+imagePath = "pic1.png"
+imagePath = "pic2.jpg"
 cascPath = 'haarcascade_frontalface_default.xml'
 
 faceCascade = cv2.CascadeClassifier(cascPath)

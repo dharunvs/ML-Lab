@@ -7,7 +7,6 @@ from sklearn import svm
 
 df = pd.read_csv("spam.csv") 
 
-
 from sklearn.model_selection import train_test_split
 
 X = df["Message"].values 

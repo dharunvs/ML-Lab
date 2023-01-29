@@ -4,7 +4,6 @@ import pandas as pd
 
 df = pd.read_csv("survey-lung-cancer.csv") 
 df['LUNG_CANCER']=df['LUNG_CANCER'].map({'YES':1,'NO':0})
-
 df['GENDER']=df['GENDER'].map({'M':1,'F':0})
 print(df.head())
 print("\n")
